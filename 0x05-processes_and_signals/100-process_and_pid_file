@@ -14,15 +14,19 @@ function Do_not_love_at_Signal()
     echo "Y U no love me?!"
 }
 
-function Quit_at_Signal()
+function Hate_the_kill_Signal()
 {
     echo "I hate the kill command"
-    rm -f var/run/myscript.pid
-    kill -9 $PRID
+}
+function Delete_file_Signal()
+{
+	rm -f /var/run/my.pid
+	kill -9 $PRID
 }
 
 trap Do_not_love_at_Signal SIGINT
-trap Quit_at_Signal SIGQUIT SIGTERM
+trap Hate_the_kill_Signal SIGTERM
+trap Delete_file_Signal SIGINT SIGTERM
 
 while true; do
 	echo "To infinity and beyond"
