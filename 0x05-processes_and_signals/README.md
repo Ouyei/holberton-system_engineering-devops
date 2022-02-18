@@ -1,6 +1,7 @@
-# Loops, conditions and parsing
+# Processes and signals
 
-In this project I learned to use bash loops, nesteed loops, diffenrents conditions and case statements.
+In this project, I learned about handling process ID's and signals in Bash
+using `ps`, `pgrep`, `pkill`, `pkill`, `exit`, and `trap`.
 
 ## Requeriments
 
