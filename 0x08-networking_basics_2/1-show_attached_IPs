@@ -2,4 +2,4 @@
 # Display all active IPv4 IPs on the machine
 # it's executed on.
 
-ifconfig | awk '/inet addr/ {print $2}' | cut -d : -f 2
+ifconfig | grep "inet addr" | cut -d":" -f2 | cut -d " " -f1
