@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Debug a server with Apache stopped
+# Debug a server with Apache stoppe d
 sudo service apache2 start
 
