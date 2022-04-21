@@ -12,3 +12,4 @@
 * HTTP redirection
 * Not found HTTP response code
 * Logs files on Linux
+
