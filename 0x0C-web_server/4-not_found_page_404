@@ -12,7 +12,7 @@ nstall a nginx web server listening on port 80.
 
 sudo apt-get -y update
 sudo apt-get install -y nginx
-ufw allow 'Nginx HTTP'
+sudo ufw allow 'Nginx HTTP'
 echo "Hello World" | sudo tee file /var/www/html/index.nginx-debian.html
 sudo sed -i '/server_name _;/a rewrite ^/redirect_me/ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
 echo "Ceci n'est pas une page" | sudo tee file /var/www/html/404.html
