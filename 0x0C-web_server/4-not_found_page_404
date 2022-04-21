@@ -1,4 +1,5 @@
-nstall a nginx web server listening on port 80.
+#!/usr/bin/env bash
+# Install a nginx web server listening on port 80.
 #
 # When querying nginx at its root / with a GET
 # request, it returns a page that contains the string
